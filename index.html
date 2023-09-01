@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <img src="sihbanner.png" class="sihbanner" alt="" />
+    <img src="sihbanner.png" class="sihbanner" alt="" />
     <div class="container">
       <h1>Register for SIH</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, omnis?
       </p>
-      <form id="myForm" onsubmit="handleFormSubmit()">
+      <form id="myForm" name="submit-to-google-sheet">
         <div class="row">
           <div class="column">
             <label for="name">Team Name</label>
@@ -27,37 +27,25 @@
               id="name"
               name="Team_Name"
               placeholder="Your team name here"
+              required
             />
           </div>
           <div class="column">
-            <label for="email">Solution Type</label>
-            <select name="Solution Type" id="Solution">
-              <option value="Software">Software</option>
-              <option value="Hardware">Hardware</option>
+            <label for="Solution">Solution Type</label>
+            <select name="Solution_Type" id="Solution" required>
+              <option>Software</option>
+              <option>Hardware</option>
             </select>
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="Problem Statement">Problem Statement</label>
-            <select name="problem_statement">
-              <option value="Sustainable Farming Sensor Network">
-                Sustainable Farming Sensor Network
-              </option>
-              <option value="Smart Home Energy Management">
-                Smart Home Energy Management
-              </option>
-              <option value="Elderly Care Connectivity">
-                Elderly Care Connectivity
-              </option>
-              <option value="Remote Work Collaboration">
-                Remote Work Collaboration
-              </option>
-            </select>
+            <label for="Problem Statement">Problem Statement Code</label>
+            <input type="text" name="Problem_Statement_Code" required />
           </div>
           <div class="column">
             <label for="contact">Upload Presentation</label>
-            <input type="file" name="ppt" />
+            <input type="file" name="ppt" required />
           </div>
         </div>
         <h4>Team Leader</h4>
@@ -67,8 +55,9 @@
             <input
               type="text"
               id="name"
-              name="Leader Name"
+              name="Leader_Name"
               placeholder="Your name here"
+              required
             />
           </div>
           <div class="column">
@@ -76,8 +65,9 @@
             <input
               type="email"
               id="email"
-              name="Leader email"
+              name="Leader_email"
               placeholder="Your email here"
+              required
             />
           </div>
         </div>
@@ -87,8 +77,9 @@
             <input
               type="number"
               id="name"
-              name="Leader roll number"
+              name="Leader_roll_number"
               placeholder="Your roll number here"
+              required
             />
           </div>
           <div class="column">
@@ -96,8 +87,9 @@
             <input
               type="text"
               id="email"
-              name="Leader Branch"
+              name="Leader_Branch"
               placeholder="Your branch here"
+              required
             />
           </div>
         </div>
@@ -107,8 +99,9 @@
             <input
               type="number"
               id="email"
-              name="Leader year"
+              name="Leader_year"
               placeholder="Your year here"
+              required
             />
           </div>
           <div class="column">
@@ -116,8 +109,9 @@
             <input
               type="tel"
               id="contact"
-              name="Leader number"
+              name="Leader_number"
               placeholder="Your phone number here"
+              required
             />
           </div>
         </div>
@@ -128,7 +122,142 @@
             <input
               type="text"
               id="name"
-              name="Second member Name"
+              name="Second_member_Name"
+              placeholder="Your name here"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="Second_member_email"
+              placeholder="Your email here"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="rollNumber">Roll number</label>
+            <input
+              type="number"
+              id="rollNumber"
+              name="Second_member_roll_number"
+              placeholder="Your roll number here"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="branch">Branch</label>
+            <input
+              type="text"
+              id="branch"
+              name="Second_member_branch"
+              placeholder="Your branch here"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="year">Year</label>
+            <input
+              type="number"
+              id="year"
+              name="Second_member_year"
+              placeholder="Your year here"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="contact">Contact Number</label>
+            <input
+              type="tel"
+              id="contact"
+              name="Second_member_number"
+              placeholder="Your phone number here"
+              required
+            />
+          </div>
+        </div>
+        <h4>Team's 3rd Member</h4>
+        <div class="row">
+          <div class="column">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="third_member_Name"
+              placeholder="Your name here"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="third_member_email"
+              placeholder="Your email here"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="rollNumber">Roll number</label>
+            <input
+              type="number"
+              id="rollNumber"
+              name="third_member_roll_number"
+              placeholder="Your roll number here"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="branch">Branch</label>
+            <input
+              type="text"
+              id="branch"
+              name="third_member_branch"
+              placeholder="Your branch here"
+              required
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <label for="year">Year</label>
+            <input
+              type="number"
+              id="year"
+              name="Second_member_year"
+              placeholder="Your year here"
+              required
+            />
+          </div>
+          <div class="column">
+            <label for="contact">Contact Number</label>
+            <input
+              type="tel"
+              id="contact"
+              name="Second_member_number"
+              placeholder="Your phone number here"
+              required
+            />
+          </div>
+        </div>
+        <h4>Team's 4th Member</h4>
+        <div class="row">
+          <div class="column">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="forth_member_Name"
+              required
               placeholder="Your name here"
             />
           </div>
@@ -137,115 +266,53 @@
             <input
               type="email"
               id="email"
-              name="Second member email"
+              name="forth_member_email"
               placeholder="Your email here"
+              required
             />
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="name">Roll number</label>
+            <label for="rollNumber">Roll number</label>
             <input
               type="number"
-              id="name"
-              name="Second member roll number"
+              id="rollNumber"
+              name="forth_member_roll_number"
               placeholder="Your roll number here"
+              required
             />
           </div>
           <div class="column">
-            <label for="email">Branch</label>
-            <input type="text" id="email" placeholder="Your branch here" />
+            <label for="branch">Branch</label>
+            <input
+              type="text"
+              id="branch"
+              name="forth_member_branch"
+              placeholder="Your branch here"
+              required
+            />
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="email">Year</label>
-            <input type="number" id="email" placeholder="Your year here" />
+            <label for="year">Year</label>
+            <input
+              type="number"
+              id="year"
+              name="forth_member_year"
+              placeholder="Your year here"
+              required
+            />
           </div>
           <div class="column">
             <label for="contact">Contact Number</label>
             <input
               type="tel"
               id="contact"
+              name="forth_member_number"
               placeholder="Your phone number here"
-            />
-          </div>
-        </div>
-        <h4>Team's 3rd Member</h4>
-        <div class="row">
-          <div class="column">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name here" />
-          </div>
-          <div class="column">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Your email here" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <label for="name">Roll number</label>
-            <input
-              type="number"
-              id="name"
-              placeholder="Your roll number here"
-            />
-          </div>
-          <div class="column">
-            <label for="email">Branch</label>
-            <input type="text" id="email" placeholder="Your branch here" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <label for="email">Year</label>
-            <input type="number" id="email" placeholder="Your year here" />
-          </div>
-          <div class="column">
-            <label for="contact">Contact Number</label>
-            <input
-              type="tel"
-              id="contact"
-              placeholder="Your phone number here"
-            />
-          </div>
-        </div>
-        <h4>Team's 4th Member</h4>
-        <div class="row">
-          <div class="column">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name here" />
-          </div>
-          <div class="column">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Your email here" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <label for="name">Roll number</label>
-            <input
-              type="number"
-              id="name"
-              placeholder="Your roll number here"
-            />
-          </div>
-          <div class="column">
-            <label for="email">Branch</label>
-            <input type="text" id="email" placeholder="Your branch here" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <label for="email">Year</label>
-            <input type="number" id="email" placeholder="Your year here" />
-          </div>
-          <div class="column">
-            <label for="contact">Contact Number</label>
-            <input
-              type="tel"
-              id="contact"
-              placeholder="Your phone number here"
+              required
             />
           </div>
         </div>
@@ -253,11 +320,14 @@
         <div class="row">
           <div class="column">
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name here" />
+            <input type="text" id="name"
+            name="fiveth_member_name"
+            required
+            placeholder="Your name here" />
           </div>
           <div class="column">
             <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Your email here" />
+            <input type="email" id="email" required name="fiveth_member_email" placeholder="Your email here" />
           </div>
         </div>
         <div class="row">
@@ -266,24 +336,31 @@
             <input
               type="number"
               id="name"
+              name="fiveth_member_roll_number"
+              required
               placeholder="Your roll number here"
             />
           </div>
           <div class="column">
-            <label for="email">Branch</label>
-            <input type="text" id="email" placeholder="Your branch here" />
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" required name="fiveth_member_branch" placeholder="Your branch here" />
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="email">Year</label>
-            <input type="number" id="email" placeholder="Your year here" />
+            <label for="year">Year</label>
+            <input type="number" id="year"
+            name="fiveth_member_year"
+            required
+            placeholder="Your year here" />
           </div>
           <div class="column">
             <label for="contact">Contact Number</label>
             <input
               type="tel"
               id="contact"
+              name="fiveth_member_number"
+              required
               placeholder="Your phone number here"
             />
           </div>
@@ -292,11 +369,14 @@
         <div class="row">
           <div class="column">
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your name here" />
+            <input type="text" id="name"
+            name="sixth_member_name"
+            required
+            placeholder="Your name here" />
           </div>
           <div class="column">
             <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Your email here" />
+            <input type="email" id="email" required name="sixth_member_email" placeholder="Your email here" />
           </div>
         </div>
         <div class="row">
@@ -305,37 +385,44 @@
             <input
               type="number"
               id="name"
+              name="sixth_member_roll_number"
+              required
               placeholder="Your roll number here"
             />
           </div>
           <div class="column">
-            <label for="email">Branch</label>
-            <input type="text" id="email" placeholder="Your branch here" />
+            <label for="branch">Branch</label>
+            <input type="text" id="branch" required name="sixth_member_branch" placeholder="Your branch here" />
           </div>
         </div>
         <div class="row">
           <div class="column">
-            <label for="email">Year</label>
-            <input type="number" id="email" placeholder="Your year here" />
+            <label for="year">Year</label>
+            <input type="number" id="year"
+            name="sixth_member_year"
+            required
+            placeholder="Your year here" />
           </div>
           <div class="column">
             <label for="contact">Contact Number</label>
             <input
               type="tel"
               id="contact"
+              name="sixth_member_number"
+              required
               placeholder="Your phone number here"
             />
           </div>
         </div>
 
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
-    </div> -->
-    <iframe
-      src="https://script.google.com/macros/s/AKfycbyRSQtB6AFlhMsll7vkTYR5xtn959-MkvBqOY35nUabwK3yp9ZC3GHQDQ-uVV0UaStR/exec"
+    </div>
+    <!-- <iframe
+      src="https://script.google.com/macros/s/AKfycbw6q1Dqk79L9pZvFscEzGJUgsU9l77f_effBswG8CQW-KntWpR0ZIzJkhYZxjKCCFVw/exec"
       height="100%"
       width="100%"
-    ></iframe>
+    ></iframe> -->
     <script src="script.js"></script>
   </body>
 </html>
